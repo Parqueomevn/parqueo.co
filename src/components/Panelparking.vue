@@ -1,7 +1,9 @@
 <template>
-    <div class="main-park">
+    <div class="main">
+   <Dashboar /> 
+<div class="container">
     <h1>Panel de parqueaderos</h1>
-<div class="items">
+    <div class="items">
   <div class="item">.1</div>
   <div class="item">.2</div>
   <div class="item">.3</div>
@@ -50,15 +52,24 @@
   <div class="item">.item</div>
   <div class="item">.item</div>
   <div class="item">.item</div>
-  <div class="item">.item</div>
-  <div class="item">.item</div>
 
+</div>
 </div>
 
 
 <!-- </div> -->
     </div>
 </template>
+<script>
+import Dashboar from './Dashboar.vue'
+
+export default {
+//   name: 'App',
+  components: {
+      Dashboar 
+  }
+}
+</script>
 
 <style>
 .main-park{
@@ -79,7 +90,7 @@ h1{
 } */
 .items{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-row-gap: 5px;
     margin-left: 20px;
     padding: 0%;

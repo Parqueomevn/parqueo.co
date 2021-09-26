@@ -1,8 +1,16 @@
 <template>
-    <div>
-        <div v-for="user in users" v-bind:key="user.login.uuid">
-            <h2>{{user.name.first}}</h2>
-        </div>
+    <div class="row" >
+        <!-- <div class="col-3">  -->
+        <div class="col-3" v-for="user in users" v-bind:key="user.login.uuid">
+            <div class="card-img-top" :src="user.picture.large">
+
+            <a :href="'/user/'+user.login.uuid"> <img :src="user.picture.medium" alt=""> </a>
+            <p>{{user.name.first}}</p>
+            <p>{{user.location.city}}</p>
+            <!-- <h2></h2> -->
+            </div>
+            </div>
+        <!-- </div> -->
     </div>
 </template>
 

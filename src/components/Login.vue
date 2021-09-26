@@ -4,7 +4,7 @@
         <div class="center">
         <h1>Sistema de control de parqueadero</h1>
         <p>Logeate para ingresar al panel de asignacion</p>
-        <router-link to="/Panelmain" type="button" class="btn btn-success" href="">Ingresar</router-link>
+        <router-link to="/PanelInicio" type="button" class="btn btn-success" href="">Ingresar</router-link>
         </div>
         </main>
     </div>
